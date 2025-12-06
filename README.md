@@ -5,17 +5,20 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/sebasquirarte/biostats/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/sebasquirarte/biostats/actions/workflows/R-CMD-check.yml)
-[![Tests](https://github.com/sebasquirarte/biostats/actions/workflows/test-coverage.yml/badge.svg)](https://github.com/sebasquirarte/biostats/actions/workflows/test-coverage.yml)
-[![codecov](https://codecov.io/gh/sebasquirarte/biostats/branch/main/graph/badge.svg)](https://app.codecov.io/gh/sebasquirarte/biostats)
 ![CRAN status](https://www.r-pkg.org/badges/version/biostats)
+[![R-CMD-check](https://github.com/sebasquirarte/biostats/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/sebasquirarte/biostats/actions/workflows/R-CMD-check.yml)
+[![codecov](https://codecov.io/gh/sebasquirarte/biostats/branch/main/graph/badge.svg)](https://app.codecov.io/gh/sebasquirarte/biostats)
+[![Total
+Downloads](https://cranlogs.r-pkg.org/badges/grand-total/biostats)](https://cranlogs.r-pkg.org/)
+[![Downloads per
+Month](https://cranlogs.r-pkg.org/badges/biostats)](https://cranlogs.r-pkg.org/)
 
 <!-- badges: end -->
 
 ## Overview
 
-***biostats*** is an R package that functions as a toolbox to streamline
-biostatistics and clinical data analysis workflows.
+***biostats*** is an R package that functions as a toolbox to aid in
+biostatistics and clinical data analysis tasks and workflows.
 
 #### Key features
 
@@ -38,14 +41,19 @@ C.V.](https://sophialab.com/en/)*
 ## Installation
 
 ``` r
-# Install from GitHub
-install.packages("remotes") 
-library(remotes)
-remotes::install_github("sebasquirarte/biostats")
-library(biostats)
+# Install latest CRAN release:
+install.packages("biostats") 
+
+# Or install developer version from GitHub:
+#install.packages("pak")
+pak::pak("sebasquirarte/biostats")
 ```
 
 ## Usage
+
+``` r
+library(biostats)
+```
 
 This package comprises 14 functions across four analytical domains:
 
@@ -191,14 +199,14 @@ single-group summaries or two-group comparisons.
 
 ``` r
 # Overall summary without considering treatment groups
-summary_table(clinical_df, exclude = c('subject_id', 'visit'))
+summary_table(clinical_df, exclude = c('participant_id', 'visit'))
 ```
 
 <img src="man/figures/summary_table_example_1.png" height = "250">
 
 ``` r
 # Grouped summary by treatment group
-summary_table(clinical_df, group_by = 'treatment', exclude = c('subject_id', 'visit'))
+summary_table(clinical_df, group_by = 'treatment', exclude = c('participant_id', 'visit'))
 ```
 
 <img src="man/figures/summary_table_example_2.png">
@@ -209,7 +217,7 @@ summary_table(clinical_df,
               group_by = 'treatment',
               all = TRUE,
               effect_size = TRUE,
-              exclude = c('subject_id', 'visit'))
+              exclude = c('participant_id', 'visit'))
 ```
 
 <img src="man/figures/summary_table_example_3.png">
@@ -954,8 +962,6 @@ Generates publication-ready boxplots with minimal code using ggplot2.
 ``` r
 # Boxplot of biomarker by treatment
 plot_box(clinical_df, x = "treatment", y = "biomarker", group = "treatment")
-#> Ignoring unknown labels:
-#> • colour : "treatment"
 ```
 
 <img src="man/figures/README-unnamed-chunk-27-1.png" width="100%" />
@@ -964,8 +970,6 @@ plot_box(clinical_df, x = "treatment", y = "biomarker", group = "treatment")
 
 # Boxplot of biomarker by study visit and treatment
 plot_box(clinical_df, x = "visit", y = "biomarker", group = "treatment")
-#> Ignoring unknown labels:
-#> • colour : "treatment"
 ```
 
 <img src="man/figures/README-unnamed-chunk-27-2.png" width="100%" />
@@ -1013,9 +1017,6 @@ plot_corr(data = swiss, type = "lower", show_sig = TRUE, sig_only = TRUE)
 <img src="man/figures/README-unnamed-chunk-28-2.png" width="100%" />
 
 ## Contributions & Feedback
-
-This package is still under active development. Features, functions, and
-examples may change as improvements are made.
 
 We welcome feedback, suggestions, and bug reports. You can share your
 thoughts via email (<sebastian.quirarte@sophia.com.mx>) or [GitHub
