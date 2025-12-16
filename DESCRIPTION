@@ -1,6 +1,6 @@
 Package: biostats
 Title: Biostatistics and Clinical Data Analysis
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: c(
     person("Sebastian", "Quirarte-Justo", 
            email = "sebastian.quirarte@sophia.com.mx", 
@@ -34,7 +34,7 @@ Imports: ggplot2, gridExtra, rlang, car, gt, nortest
 URL: https://github.com/sebasquirarte/biostats
 BugReports: https://github.com/sebasquirarte/biostats/issues
 NeedsCompilation: no
-Packaged: 2025-12-05 14:51:04 UTC; squirartej
+Packaged: 2025-12-08 16:05:32 UTC; squirartej
 Author: Sebastian Quirarte-Justo [aut, cre] (ORCID:
     <https://orcid.org/0009-0004-2730-4343>),
   Angela Carolina Montano-Ruiz [aut] (ORCID:
@@ -44,4 +44,4 @@ Author: Sebastian Quirarte-Justo [aut, cre] (ORCID:
   Laboratorios Sophia S.A. de C.V. [cph, fnd]
 Maintainer: Sebastian Quirarte-Justo <sebastian.quirarte@sophia.com.mx>
 Repository: CRAN
-Date/Publication: 2025-12-06 13:10:09 UTC
+Date/Publication: 2025-12-16 12:40:07 UTC
