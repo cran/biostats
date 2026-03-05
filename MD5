@@ -1,7 +1,7 @@
-5c757126b9b363c34690b18a41a5443f *DESCRIPTION
+9046c075399676a0ea3317a1e56e049b *DESCRIPTION
 b3d1643717c8d8adfd6a3ace44137779 *LICENSE
 6976a186dd110e3e2c8ba98379cd48f1 *NAMESPACE
-f949e252751e8bc5da3ffb3cabf94879 *NEWS.md
+c9a0623e31526fb05e019d65874b11f8 *NEWS.md
 f8935bd9b08aac0e8cfaffda9d66047a *R/clinical_data.R
 7e63aa43b644b65258bfeec76fc5a5f8 *R/effect_measures.R
 b3bbcc79efbad5aa326e8f65e3616847 *R/missing_values.R
@@ -13,12 +13,12 @@ a24434b603c21a2b1fa97dcc486109d9 *R/plot_bar.R
 b1335829c3d556a2323c8d1b9eb7f261 *R/plot_corr.R
 f26e8fe7de0e301b0727175b8c69a569 *R/plot_hist.R
 d4e460c3afd2040fd33f7fef82ff7028 *R/plot_line.R
-4539276e8d37312b65c88e15f96e774d *R/sample_size.R
-80144718f63650eee1ac0cbdc68138fe *R/sample_size_range.R
+c5c2ff6c209ea9208d6e9dd56c2e7c53 *R/sample_size.R
+b33ecb31aad438f39dbafdcae6f00419 *R/sample_size_range.R
 10099de807b78657d88539e2ca7dffc7 *R/summary_table.R
 4f03643c9aabba2ab6852fbf25300e23 *R/util-omnibus.R
 c07c4592d0dfffd4b6e2c747c389bc3b *R/util-summary_table.R
-25de2dff89d68aff831ea6c6261ff67d *README.md
+0d2f53c5c32545c2e5739649e5c4a0c5 *README.md
 92cd3400408bbaae1cbe507e51b598e9 *man/clinical_data.Rd
 317a6f281015a48cb9f1ad628ddf2855 *man/effect_measures.Rd
 c134cee726882e936732c18346532a98 *man/figures/README-unnamed-chunk-10-1.png
@@ -44,8 +44,8 @@ d6134b9fe50de58bdc53df281a2f3217 *man/figures/README-unnamed-chunk-21-1.png
 a90cd6c60a236887b2ac45c0d1160614 *man/figures/README-unnamed-chunk-22-2.png
 0dda86e52f163c3e97c0cb239d156e99 *man/figures/README-unnamed-chunk-23-1.png
 a90cd6c60a236887b2ac45c0d1160614 *man/figures/README-unnamed-chunk-23-2.png
-0dda86e52f163c3e97c0cb239d156e99 *man/figures/README-unnamed-chunk-24-1.png
-b1db7b25afbf387a5247189d7289c45e *man/figures/README-unnamed-chunk-24-2.png
+50351f7beedc8d896a7fb91df864d22b *man/figures/README-unnamed-chunk-24-1.png
+6fcc0500efeb0f29ed720c4ca3012a75 *man/figures/README-unnamed-chunk-24-2.png
 44d1e52e5b89667a9e9792e406c53129 *man/figures/README-unnamed-chunk-25-1.png
 e832c53ba8799477814a916b6f6f873c *man/figures/README-unnamed-chunk-25-2.png
 206bb5fa2490648b1294dd4b225806e5 *man/figures/README-unnamed-chunk-26-1.png
@@ -87,7 +87,7 @@ ebdbe2a993fda3f7b5176a6f1aed785a *tests/testthat/test-plot_bar.R
 86fc743befc1e5cc18b132aa449fc755 *tests/testthat/test-plot_corr.R
 a7766268296f03f6cc091083214a128a *tests/testthat/test-plot_hist.R
 2139825a842965884dcf0a1cede08dcd *tests/testthat/test-plot_line.R
-463f77e0443ac139d365d555ce388844 *tests/testthat/test-sample_size.R
-5da439fca264aebb80719e5dc402350a *tests/testthat/test-sample_size_range.R
+23b44c22ab0deec32011c1a3c8705f53 *tests/testthat/test-sample_size.R
+ce3072bf6bdcf35c7d20ec05bd984131 *tests/testthat/test-sample_size_range.R
 458513a442739875fc3964212492b065 *tests/testthat/test-summary_table.R
 30b564e132e797909da7660064e3bb84 *tests/testthat/test_omnibus.R
